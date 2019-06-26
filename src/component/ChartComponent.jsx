@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Line } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 
 class Chart extends Component {
     constructor(props) {
@@ -13,7 +13,7 @@ class Chart extends Component {
         //console.log("the prop data set ", this.props.chartDataset);
      
         return (<div>
-            <Line
+            <Bar
             data={this.props.chartDataset}
             options = { {
                 scales: {
